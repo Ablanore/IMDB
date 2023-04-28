@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="module" src="/dist/app.js"></script>
+<link href="/style/style.css" type="text/css" rel="stylesheet">
+<title>Document</title>    
+</head>
+<body>
+<h2>touts les films que j'ai vu</h2>
+<span id="spanTest"></span>
+<div class="tabs">
+    <span data-tab-value="#tab_1">Liste de films</span>
+    <span data-tab-value="#tab_2">Liste des acteurs</span>
+    <span data-tab-value="#tab_3">Autre</span>
+</div>
+<div class="tab-content">
+    <div class="tabs__tab active" id="tab_1" data-tab-info>
+        <div>Ici c'est le TAB 1 qui concerne la récupération des films</div>
+    </div>
+    <div class="tabs__tab" id="tab_2" data-tab-info>
+        <div>Ici c'est le TAB 2 qui concerne la rechrche d'una ctuer dans les films que j'ai vu</div>
+    </div>
+    <div class="tabs__tab" id="tab_3" data-tab-info>
+        <div>ici c'est le TAB 3 qui sert à je sais pas quoi</div>
+    </div>
+</div>
+</body>
+</html>

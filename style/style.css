@@ -1,0 +1,27 @@
+/* Portion de CSS pour la gestion des menus */
+body {
+    background: rgb(255, 255, 255);
+}
+[data-tab-info] {
+    display: none;
+}
+.active[data-tab-info] {
+    display: block;
+}
+.tab-content {
+    color: rgb(82, 75, 75);
+    border: 1px solid rgb(0, 0, 0);
+}
+.tabs {
+    display: flex;
+    margin: 0;    
+}
+.tabs span {    
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.tabs span:hover {
+    background: rgb(128, 128, 128);
+    cursor: pointer;
+    color: black;
+}

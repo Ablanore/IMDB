@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ES2020",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "target": "ES2020",
+        "noEmitOnError": true,
+        "strict": true,
+        "allowSyntheticDefaultImports":true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "files": [
+        "src/app.ts"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
