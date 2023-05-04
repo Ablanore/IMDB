@@ -1,22 +1,39 @@
 //#region Import des Class
-//import { Personnage } from "./model/personnage.js";
+import { Film, IFilm } from "./model/film.js";
+import { callJson } from "./model/callJson.js";
+
+//import { unlink } from 'node:fs/promises';
 //Import des Datas
 //import { RaceData } from "./data/RaceData.js";
 
 //#endregion import des Class
 
-//Terrain de jeu
-var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-
-
-
-
-export function maFunction() {
-
+/*
+try {
+  await unlink('/tmp/hello');
+  console.log('successfully deleted /tmp/hello');
+} catch (error: unknown) {
+  console.error('there was an error:', error.message);
 }
+
+console.log('création fichier');
+*/
+console.log('biloute');
+const tabIMDB: string[] = ['tt0120685','tt0257076','tt0803096','tt0831387','tt11291274','tt13320622','tt3741700'];
+
+for (const idFilm of tabIMDB) {
+  var requestURL = 'https://raw.githubusercontent.com/Ablanore/IMDB/master/src/data/' + idFilm + '.json';
+  callJson.appelJson(requestURL).then(
+    function(lefilm: IFilm) {
+      new Film(lefilm);
+      console.log(lefilm.fullTitle);
+    }
+  )
+}
+console.log('biloute fin');
+export function maFunction() {}
 (window as any).maFunction = maFunction;
+
 
 //#region les évènements des composants de la page
 //#endregion les évènements des composants de la page

@@ -1,0 +1,17 @@
+ Le volume dans le lecteur D s'appelle Data
+ Le num‚ro de s‚rie du volume est 94FB-1B8D
+
+ R‚pertoire de D:\Truc\IMDB 2\src\data
+
+03/05/2023  15:38    <DIR>          .
+03/05/2023  15:38    <DIR>          ..
+03/05/2023  15:38               134 laliste.txt
+03/05/2023  14:24           235ÿ461 tt0120685.json
+28/04/2023  17:12           137ÿ307 tt0257076.json
+28/04/2023  17:12           321ÿ074 tt0803096.json
+28/04/2023  17:12           511ÿ287 tt0831387.json
+28/04/2023  17:12            85ÿ304 tt11291274.json
+28/04/2023  17:12            90ÿ329 tt13320622.json
+28/04/2023  17:12           425ÿ211 tt3741700.json
+               8 fichier(s)        1ÿ806ÿ107 octets
+               2 R‚p(s)  95ÿ175ÿ241ÿ728 octets libres
